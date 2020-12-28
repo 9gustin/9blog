@@ -1,3 +1,5 @@
+import styles from "./SimpleButton.module.scss";
+
 type Props = {
   text: string;
   text_color: string;
@@ -5,7 +7,8 @@ type Props = {
 };
 
 const SimpleButton = ({ text, text_color, background }: Props): JSX.Element => {
-  return <button className={`text-${text_color} bg-${background}`}>{text}</button>;
+  // return <button className={`text-${text_color} bg-${background}`}>{text}</button>;
+  return <button className={`${styles.button} ${isRounded && styles.rounded}`}>{text}</button>;
 };
 
 export default SimpleButton;
