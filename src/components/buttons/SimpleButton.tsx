@@ -1,14 +1,32 @@
+import { MouseEventHandler, ReactChild } from "react";
+
 import styles from "./SimpleButton.module.scss";
 
 type Props = {
-  text: string;
-  text_color: string;
-  background: string;
+  buttonType: "PRIMARY" | "INLINE" | "NORMAL";
+  onClick: MouseEventHandler;
+  children: ReactChild;
 };
 
-const SimpleButton = ({ text, text_color, background }: Props): JSX.Element => {
-  // return <button className={`text-${text_color} bg-${background}`}>{text}</button>;
-  return <button className={`${styles.button} ${isRounded && styles.rounded}`}>{text}</button>;
+const SimpleButton: React.FC<Props> = ({ buttonType, onClick, children }: Props): JSX.Element => {
+  let className = styles.btn + " ";
+  switch (buttonType) {
+    case "PRIMARY":
+      className += styles.PRIMARY;
+      break;
+    case "INLINE":
+      className += styles.INLINE;
+      break;
+    default:
+      className += styles.NORMAL;
+      break;
+  }
+  console.log(className);
+  return (
+    <button onClick={onClick} className={className}>
+      {children}
+    </button>
+  );
 };
 
 export default SimpleButton;

@@ -1,4 +1,4 @@
-button {
+.btn {
   border: 0;
   border-radius: 30px;
   font-weight: 500;
@@ -7,16 +7,15 @@ button {
   padding-right: 10px;
   cursor: pointer;
   background: 0;
-}
 
-.text-purple {
-  color: #482be7;
-}
+  &.PRIMARY{
+    color: var(--primary);
+    background-color: white;
+  };
 
-.bg-white {
-  background-color: white;
-}
+  &.INLINE{
+    border: 1px white solid;
+  };
 
-.bg-inline {
-  border: 1px white solid;
-}
+};
+
