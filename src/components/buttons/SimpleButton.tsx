@@ -1,6 +1,6 @@
 import { MouseEventHandler, ReactChild } from "react";
 
-import styles from "./SimpleButton.module.scss";
+import styles from "../../styles/components/buttons/SimpleButton.module.scss";
 
 type Props = {
   buttonType: "PRIMARY" | "INLINE" | "NORMAL";
@@ -18,7 +18,6 @@ const SimpleButton: React.FC<Props> = ({ buttonType, onClick, children }: Props)
       className += styles.INLINE;
       break;
     default:
-      className += styles.NORMAL;
       break;
   }
   console.log(className);
