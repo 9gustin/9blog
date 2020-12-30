@@ -11,7 +11,7 @@ interface Props {
 const LongHeader: React.FC<Props> = ({ children, backgroundImageUrl }) => {
   return (
     <header className={styles.longHeader}>
-      <BackgroundImg image={backgroundImageUrl ?? ""} />
+      <BackgroundImg image={backgroundImageUrl ?? ""} isFixHeight />
       {children}
     </header>
   );
