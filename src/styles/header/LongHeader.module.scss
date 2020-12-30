@@ -1,0 +1,14 @@
+@import "../sizes.scss";
+
+.longHeader {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  height: 80vh;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .longHeader {
+    height: 100vh;
+  }
+}
