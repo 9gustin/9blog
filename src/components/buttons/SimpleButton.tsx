@@ -1,6 +1,6 @@
 import { MouseEventHandler, ReactChild } from "react";
 
-import styles from "../../styles/components/buttons/SimpleButton.module.scss";
+import styles from "../../styles/buttons/SimpleButton.module.scss";
 
 type Props = {
   buttonType: "PRIMARY" | "INLINE" | "NORMAL";

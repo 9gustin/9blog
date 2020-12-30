@@ -1,11 +1,10 @@
+@import "../../sizes.scss";
+
 .navbar{
-    display: flex;
     .navDesktop{
         display: flex;
         list-style: none;
-        margin-left: auto;
-        margin-right: 10px;
-        justify-content: space-around;
+        height: fit-content;
     }
     .navMobile{
         background-color: aqua;
@@ -63,7 +62,7 @@
           }
     }
     /* make it responsive! */
-    @media screen and (max-width: 44em) {
+    @media (max-width: $breakpoint-tablet) {
       .navMobile{
         display: flex;
       }

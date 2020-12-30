@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import styles from "../../../styles/components/header/navbar/Navbar.module.scss";
+import styles from "../../../styles/header/navbar/Navbar.module.scss";
 import { TypeNavData } from "./NavData";
 
 type Props = {

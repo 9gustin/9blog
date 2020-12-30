@@ -1,4 +1,4 @@
-import styles from "../../../styles/components/header/navbar/Navbar.module.scss";
+import styles from "../../../styles/header/navbar/Navbar.module.scss";
 import NavbarDesktop from "./NavbarDesktop";
 import NavbarMobile from "./NavbarMobile";
 import { NavData } from "./NavData";
