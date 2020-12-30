@@ -20,7 +20,6 @@ const SimpleButton: React.FC<Props> = ({ buttonType, onClick, children }: Props)
     default:
       break;
   }
-  console.log(className);
   return (
     <button onClick={onClick} className={className}>
       {children}
