@@ -1,9 +1,9 @@
 import styles from "../../../styles/components/header/navbar/Navbar.module.scss";
 import NavbarDesktop from "./NavbarDesktop";
 import NavbarMobile from "./NavbarMobile";
-import { NavData, TypeNavData } from "./NavData";
+import { NavData } from "./NavData";
 
-const Navbar: React.FC<TypeNavData> = (): JSX.Element => {
+const Navbar: React.FC = (): JSX.Element => {
   return (
     <nav className={styles.navbar}>
       <NavbarDesktop Data={NavData} />

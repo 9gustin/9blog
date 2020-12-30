@@ -1,5 +1,11 @@
-import Navbar from "../components/header/navbar/Navbar";
+import LongHeader from "../components/header/LongHeader";
 
 export default function Home(): JSX.Element {
-  return <Navbar />;
+  return (
+    <>
+      <LongHeader backgroundImageUrl="https://docs.microsoft.com/es-es/windows/uwp/design/controls-and-patterns/images/image_licorice.jpg">
+        header!
+      </LongHeader>
+    </>
+  );
 }
