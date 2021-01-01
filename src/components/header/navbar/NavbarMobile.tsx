@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import styles from "../../../styles/components/header/navbar/Navbar.module.scss";
+import SimpleButton from "../../buttons/SimpleButton";
 import { TypeNavData } from "./NavData";
 
 type Props = {
@@ -25,14 +26,12 @@ const NavbarMobile: React.FC<Props> = ({ Data }): JSX.Element => {
               -_-
             </button>
           </li>
-          {Data.map(({ title }, index) => {
+          {Data.map(({ title, buttonType }, i) => {
             return (
-              <li key={index} className={styles.nav_text}>
-                {/* <a to={item.path}>
-                  {item.icon}
-                  <span>{item.title}</span>
-                </a> */}
-                <a>{title}</a>
+              <li key={i} className={styles.nav_text}>
+                <SimpleButton key={i} buttonType={buttonType} onClick={console.log}>
+                  {title}
+                </SimpleButton>
               </li>
             );
           })}
