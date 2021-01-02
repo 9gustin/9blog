@@ -1,0 +1,74 @@
+@import "../../sizes.scss";
+
+.navMobile{
+  height: 80px;
+  display: none;
+  justify-content: start;
+  align-items: center;
+  width: 60%;
+
+  .menuBars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white
+  }
+
+  .navMenu {
+    background-color: var(--lightPrimary);
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+
+    &.active {
+      left: 0;
+      transition: 350ms;
+    }
+
+  }
+
+  .navMenuItems {
+    width: 100%;
+    margin-right: 100px;
+    list-style: none;
+  }
+
+  .navbarToggle {
+    background-color: #060b26;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .navText button{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    width: 95%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px 16px;
+    border-radius: 4px;
+  }
+
+  .navText button:hover {
+    background-color: #1a83ff;
+    color: white !important;
+  }
+
+}
+@media (max-width: $breakpoint-tablet) {
+  .navMobile{
+    display: flex;
+  }
+}

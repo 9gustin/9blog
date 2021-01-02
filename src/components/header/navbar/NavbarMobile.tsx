@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { BiMenu } from "react-icons/bi";
 
-import styles from "../../../styles/header/navbar/Navbar.module.scss";
+import styles from "../../../styles/header/navbar/NavbarMobile.module.scss";
 import SimpleButton from "../../buttons/SimpleButton";
 import { TypeNavData } from "./NavData";
 
@@ -16,19 +17,19 @@ const NavbarMobile: React.FC<Props> = ({ Data }): JSX.Element => {
 
   return (
     <div className={styles.navMobile}>
-      <button className={styles.menu_bars} onClick={handleToggle}>
-        Toggle
+      <button className={styles.menuBars} onClick={handleToggle}>
+        <BiMenu />
       </button>
-      <nav className={toggleMenu ? `${styles.nav_menu} ${styles.active}` : styles.nav_menu}>
-        <ul className={styles.nav_menu_items}>
-          <li className={styles.navbar_toggle}>
-            <button className={styles.menu_bars} onClick={handleToggle}>
-              -_-
+      <nav className={toggleMenu ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
+        <ul className={styles.navMenuItems}>
+          <li className={styles.navbarToggle}>
+            <button className={styles.menuBars} onClick={handleToggle}>
+              <BiMenu />
             </button>
           </li>
           {Data.map(({ title, buttonType }, i) => {
             return (
-              <li key={i} className={styles.nav_text}>
+              <li key={i} className={styles.navText}>
                 <SimpleButton key={i} buttonType={buttonType} onClick={console.log}>
                   {title}
                 </SimpleButton>

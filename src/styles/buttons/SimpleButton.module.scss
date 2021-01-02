@@ -18,7 +18,7 @@
   }
 
   &.PRIMARY{
-    color: var(--primary);
+    color: var(--primary) !important;
     background-color: white;
   };
 
