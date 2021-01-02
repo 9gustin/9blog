@@ -24,7 +24,9 @@
     "node-sass": "^5.0.0",
     "normalize.css": "^8.0.1",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "rich-markdown-editor": "^11.0.11",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@types/node": "^14.14.16",
