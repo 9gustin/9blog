@@ -1,0 +1,13 @@
+@import "../../sizes.scss";
+
+.navDesktop{
+    display: flex;
+    list-style: none;
+    height: fit-content;
+
+}
+@media (max-width: $breakpoint-tablet) {
+    .navDesktop{
+      display: none;
+    }
+}

@@ -1,11 +1,7 @@
-import React from "react";
-
-import TextEditor from "../components/texts/TextEditor";
+import LongHeader from "../components/header/LongHeader";
 
 export default function Home(): JSX.Element {
   return (
-    <div>
-      <TextEditor />
-    </div>
+    <p> Hola mundo</p>
   );
-}
+};
