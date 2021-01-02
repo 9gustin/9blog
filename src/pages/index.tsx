@@ -1,4 +1,4 @@
-import LongHeader from "../components/header/LongHeader";
+import Card from "../components/items/Card";
 
 export default function Home(): JSX.Element {
   return (
