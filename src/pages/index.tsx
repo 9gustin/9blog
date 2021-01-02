@@ -1,3 +1,11 @@
+import React from "react";
+
+import TextEditor from "../components/texts/TextEditor";
+
 export default function Home(): JSX.Element {
-  return <p>hello world!</p>;
+  return (
+    <div>
+      <TextEditor />
+    </div>
+  );
 }
