@@ -3,6 +3,7 @@ import { BiCommentDetail } from "react-icons/bi";
 import { HiShare } from "react-icons/hi";
 
 import styles from "../../styles/items/Post.module.scss";
+import User from "./User";
 
 type Props = {
   profile: string;
@@ -24,7 +25,7 @@ const Post: React.FC<Props> = ({
   return (
     <article className={styles.post}>
       <picture className={styles.profilePicture}>
-        <img src={profile} alt="User" />
+        <User src={profile} alt="User" />
       </picture>
       <div className={styles.postText}>
         <h1>{title}</h1>
