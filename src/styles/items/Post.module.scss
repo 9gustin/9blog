@@ -1,4 +1,6 @@
 .post{
+    display: grid;
+    height: 100%;
     color: white;
     padding: 10px;
 
@@ -9,30 +11,31 @@
     }
 
     .postText{
+        align-self: center;
         h1{
             width: 60%;
         }
     }
 
     .social{
+        align-self: flex-end;
+        justify-content: flex-end;
+        margin-top: auto;
         display: flex;
         list-style: none;
         padding-left: 5px;
+        width: 100%;
+        border-top: 1px solid white;
+        padding-top: 10px;
+
         li{
             margin-right: 10px;
 
-            .socialButton{
+            .socialStats{
                 display: inline-flex;
-                border: 0;
-                background: 0;
                 font-size: 1.3rem;
                 color: white;
-                cursor: pointer;
                 margin-right: 10px;
-
-                &:focus{
-                    outline: 0;
-                }
 
                 .socialText{
                     margin: 0 5px;

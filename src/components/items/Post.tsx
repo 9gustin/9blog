@@ -31,25 +31,24 @@ const Post: React.FC<Props> = ({
         <h1>{title}</h1>
         <p>{description}</p>
       </div>
-      <hr />
       <ul className={styles.social}>
         <li>
-          <button className={styles.socialButton}>
+          <div className={styles.socialStats}>
             <AiFillHeart className={styles.socialSVG} />
             <p className={styles.socialText}>{likes}</p>
-          </button>
+          </div>
         </li>
         <li>
-          <button className={styles.socialButton}>
+          <div className={styles.socialStats}>
             <BiCommentDetail className={styles.socialSVG} />
             <p className={styles.socialText}>{comments}</p>
-          </button>
+          </div>
         </li>
         <li>
-          <button className={styles.socialButton}>
+          <div className={styles.socialStats}>
             <HiShare className={styles.socialSVG} />
             <p className={styles.socialText}>{shares}</p>
-          </button>
+          </div>
         </li>
       </ul>
     </article>
