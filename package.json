@@ -20,6 +20,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "apisauce": "^2.0.1",
     "markdown-it": "^12.0.4",
     "next": "10.0.4",
     "node-sass": "^5.0.0",
