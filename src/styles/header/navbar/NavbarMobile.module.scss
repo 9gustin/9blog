@@ -12,7 +12,7 @@
     font-size: 2rem;
     background: none;
     border: none;
-    color: white
+    color: var(--white);
   }
 
   .navMenu {
@@ -40,7 +40,7 @@
   }
 
   .navbarToggle {
-    background-color: #060b26;
+    background-color: var(--blackSecondary);
     width: 100%;
     height: 80px;
     display: flex;
@@ -49,7 +49,7 @@
   }
 
   .navText button{
-    color: white;
+    color: var(--white);
     text-decoration: none;
     font-size: 18px;
     width: 95%;
@@ -62,8 +62,8 @@
   }
 
   .navText button:hover {
-    background-color: #1a83ff;
-    color: white !important;
+    background-color: var(--actionPrimary);
+    color: var(--white) !important;
   }
 
 }
