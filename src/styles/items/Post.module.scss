@@ -1,0 +1,50 @@
+.post{
+    display: grid;
+    height: 100%;
+    color: white;
+    padding: 10px;
+
+    .profilePicture{
+        img{
+            margin-bottom: 40px;
+        }
+    }
+
+    .postText{
+        align-self: center;
+        h1{
+            width: 60%;
+        }
+    }
+
+    .social{
+        align-self: flex-end;
+        justify-content: flex-end;
+        margin-top: auto;
+        display: flex;
+        list-style: none;
+        padding-left: 5px;
+        width: 100%;
+        border-top: 1px solid white;
+        padding-top: 10px;
+
+        li{
+            margin-right: 10px;
+
+            .socialStats{
+                display: inline-flex;
+                font-size: 1.3rem;
+                color: white;
+                margin-right: 10px;
+
+                .socialText{
+                    margin: 0 5px;
+                }
+
+                .socialSVG{
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
