@@ -1,7 +1,7 @@
 .post{
     display: grid;
     height: 100%;
-    color: white;
+    color: var(--white);
     padding: 10px;
 
     .profilePicture{
@@ -25,7 +25,7 @@
         list-style: none;
         padding-left: 5px;
         width: 100%;
-        border-top: 1px solid white;
+        border-top: 1px solid var(--white);
         padding-top: 10px;
 
         li{
@@ -34,7 +34,7 @@
             .socialStats{
                 display: inline-flex;
                 font-size: 1.3rem;
-                color: white;
+                color: var(--white);
                 margin-right: 10px;
 
                 .socialText{

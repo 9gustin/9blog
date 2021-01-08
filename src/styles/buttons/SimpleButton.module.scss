@@ -19,11 +19,11 @@
 
   &.PRIMARY{
     color: var(--primary) !important;
-    background-color: white;
+    background-color: var(--white);
   };
 
   &.INLINE{
-    border: 1px white solid;
+    border: 1px var(--white) solid;
   };
 
 };
